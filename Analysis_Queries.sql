@@ -72,6 +72,12 @@ where dpt.dept_name in ('Sales','Development')
 order by dpt.dept_name;
 
 
+--List first name, last name, and sex of each employee whose first name is Hercules and whose last name begins with the letter B
+
+select e.first_name,e.last_name,e.sex 
+from employee e
+where e.first_name = 'Hercules' and e.last_name like 'B%';
+
 --List the frequency counts, in descending order, of all the employee last names (that is, how many employees share each last name)
 
 
